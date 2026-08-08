@@ -1,0 +1,65 @@
+name: Build Nova QR AAB
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+
+      - name: Decode Keystore
+        run: |
+          echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > app/nova-release.keystore
+          echo "SHA256 of decoded keystore:"
+          sha256sum app/nova-release.keystore
+          ls -la app/nova-release.keystore
+          echo "KEY_ALIAS length: ${#KEY_ALIAS}"
+        env:
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+
+      - name: Build Release AAB
+        env:
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+        run: |
+          gradle bundleRelease \
+            -Pandroid.injected.signing.store.file=$GITHUB_WORKSPACE/app/nova-release.keystore \
+            -Pandroid.injected.signing.store.password=$KEYSTORE_PASSWORD \
+            -Pandroid.injected.signing.key.alias=$KEY_ALIAS \
+            -Pandroid.injected.signing.key.password=$KEY_PASSWORD \
+            --stacktrace
+
+      - name: Build Debug APK for testing
+        run: gradle assembleDebug --stacktrace
+
+      - name: Upload AAB artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Nova-release-aab
+          path: app/build/outputs/bundle/release/app-release.aab
+
+      - name: Upload Debug APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Nova-debug-apk
+          path: app/build/outputs/apk/debug/app-debug.apk

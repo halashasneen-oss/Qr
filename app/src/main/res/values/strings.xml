@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QR Pro</string>
+
+    <!-- التنقل السفلي -->
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_scan">مسح</string>
+    <string name="nav_create">إنشاء</string>
+    <string name="nav_history">السجل</string>
+    <string name="nav_vault">الخزنة</string>
+    <string name="nav_settings">الإعدادات</string>
+
+    <!-- الرئيسية -->
+    <string name="home_title">أهلاً فيك</string>
+    <string name="home_subtitle">امسح، أنشئ، واحفظ أكوادك بكل أمان</string>
+    <string name="btn_scan">مسح كود</string>
+    <string name="btn_create">إنشاء كود</string>
+    <string name="btn_history">السجل</string>
+    <string name="btn_vault">الخزنة</string>
+    <string name="btn_settings">الإعدادات</string>
+    <string name="btn_watch_ad">شاهد إعلان لإزالة الإعلانات لساعة</string>
+    <string name="stats_scans">مرات المسح</string>
+    <string name="stats_generated">أكواد منشأة</string>
+    <string name="stats_vault">عناصر محفوظة</string>
+
+    <!-- المسح -->
+    <string name="scan_title">وجّه الكاميرا نحو الكود</string>
+    <string name="scan_permission_needed">التطبيق يحتاج إذن الكاميرا لمسح الأكواد</string>
+    <string name="scan_grant_permission">منح الإذن</string>
+    <string name="scan_flash_on">تشغيل الفلاش</string>
+    <string name="scan_flash_off">إطفاء الفلاش</string>
+
+    <!-- النتيجة -->
+    <string name="result_type">نوع الكود</string>
+    <string name="result_content">المحتوى</string>
+    <string name="result_site_name">اسم الموقع</string>
+    <string name="result_secure">اتصال آمن (HTTPS)</string>
+    <string name="result_insecure">تحذير: اتصال غير آمن (HTTP)</string>
+    <string name="action_open">فتح</string>
+    <string name="action_copy">نسخ</string>
+    <string name="action_share">مشاركة</string>
+    <string name="action_save">حفظ</string>
+    <string name="action_favorite">إضافة للمفضلة</string>
+    <string name="action_call">اتصال</string>
+    <string name="action_send_email">إرسال بريد</string>
+    <string name="action_open_maps">فتح في الخرائط</string>
+    <string name="copied_toast">تم النسخ</string>
+
+    <!-- إنشاء -->
+    <string name="create_title">إنشاء كود QR</string>
+    <string name="create_type_website">موقع</string>
+    <string name="create_type_text">نص</string>
+    <string name="create_type_phone">هاتف</string>
+    <string name="create_type_email">بريد</string>
+    <string name="create_type_sms">رسالة</string>
+    <string name="create_type_wifi">Wi-Fi</string>
+    <string name="create_type_contact">جهة اتصال</string>
+    <string name="create_type_location">موقع جغرافي</string>
+    <string name="create_type_whatsapp">واتساب</string>
+    <string name="create_type_telegram">تيليجرام</string>
+    <string name="create_type_instagram">انستغرام</string>
+    <string name="create_type_facebook">فيسبوك</string>
+    <string name="create_type_youtube">يوتيوب</string>
+    <string name="create_customize">تخصيص الشكل</string>
+    <string name="create_color">اللون</string>
+    <string name="create_background">الخلفية</string>
+    <string name="create_logo">إضافة شعار</string>
+    <string name="create_dot_shape">شكل النقاط</string>
+    <string name="create_corner_shape">شكل الزوايا</string>
+    <string name="create_frame">إضافة إطار</string>
+    <string name="create_generate">توليد الكود</string>
+    <string name="create_save_png">حفظ بصيغة PNG</string>
+
+    <!-- السجل -->
+    <string name="history_title">السجل</string>
+    <string name="history_empty">لا يوجد أي عنصر في السجل بعد</string>
+    <string name="history_search_hint">ابحث في السجل...</string>
+    <string name="history_filter_all">الكل</string>
+    <string name="history_filter_favorites">المفضلة</string>
+    <string name="history_export">تصدير السجل</string>
+    <string name="history_delete_selected">حذف المحدد</string>
+    <string name="history_clear_all">حذف كل السجل</string>
+
+    <!-- الخزنة -->
+    <string name="vault_title">الخزنة</string>
+    <string name="vault_locked_message">الخزنة مقفلة لحمايتك</string>
+    <string name="vault_unlock_pin">أدخل كلمة المرور</string>
+    <string name="vault_unlock_fingerprint">استخدام البصمة</string>
+    <string name="vault_empty">لا يوجد عناصر محفوظة في الخزنة</string>
+    <string name="vault_add_item">إضافة عنصر</string>
+    <string name="vault_set_pin_title">تعيين كلمة مرور الخزنة</string>
+
+    <!-- الإحصائيات -->
+    <string name="stats_title">الإحصائيات</string>
+    <string name="stats_most_used_type">أكثر نوع استخدامًا</string>
+    <string name="stats_weekly_usage">الاستخدام الأسبوعي</string>
+
+    <!-- الإعدادات -->
+    <string name="settings_title">الإعدادات</string>
+    <string name="settings_language">اللغة</string>
+    <string name="settings_dark_mode">الوضع الليلي</string>
+    <string name="settings_vibration">الاهتزاز</string>
+    <string name="settings_scan_sound">صوت المسح</string>
+    <string name="settings_auto_copy">النسخ التلقائي</string>
+    <string name="settings_save_history">حفظ السجل</string>
+    <string name="settings_privacy_mode">وضع الخصوصية (إخفاء السجل)</string>
+    <string name="settings_backup">نسخ احتياطي</string>
+    <string name="settings_restore">استعادة من ملف</string>
+    <string name="settings_about">عن التطبيق</string>
+
+    <!-- عام -->
+    <string name="dialog_cancel">إلغاء</string>
+    <string name="dialog_confirm">تأكيد</string>
+    <string name="dialog_delete_confirm_title">تأكيد الحذف</string>
+    <string name="dialog_delete_confirm_message">هل أنت متأكد من الحذف؟ لا يمكن التراجع عن هذا الإجراء.</string>
+</resources>

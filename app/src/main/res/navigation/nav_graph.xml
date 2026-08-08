@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.halashasneen.nova.ui.home.HomeFragment"
+        android:label="@string/nav_home"
+        tools:layout="@layout/fragment_home">
+        <action android:id="@+id/action_home_to_scan" app:destination="@id/scanFragment" />
+        <action android:id="@+id/action_home_to_create" app:destination="@id/createFragment" />
+        <action android:id="@+id/action_home_to_history" app:destination="@id/historyFragment" />
+        <action android:id="@+id/action_home_to_vault" app:destination="@id/vaultFragment" />
+        <action android:id="@+id/action_home_to_settings" app:destination="@id/settingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/scanFragment"
+        android:name="com.halashasneen.nova.ui.scan.ScanFragment"
+        android:label="@string/nav_scan"
+        tools:layout="@layout/fragment_scan">
+        <action android:id="@+id/action_scan_to_result" app:destination="@id/resultFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.halashasneen.nova.ui.result.ResultFragment"
+        android:label="@string/result_type"
+        tools:layout="@layout/fragment_result">
+        <argument android:name="rawContent" app:argType="string" />
+        <argument android:name="isGenerated" app:argType="boolean" android:defaultValue="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createFragment"
+        android:name="com.halashasneen.nova.ui.create.CreateFragment"
+        android:label="@string/nav_create"
+        tools:layout="@layout/fragment_create">
+        <action android:id="@+id/action_create_to_result" app:destination="@id/resultFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.halashasneen.nova.ui.history.HistoryFragment"
+        android:label="@string/nav_history"
+        tools:layout="@layout/fragment_history">
+        <action android:id="@+id/action_history_to_result" app:destination="@id/resultFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/vaultFragment"
+        android:name="com.halashasneen.nova.ui.vault.VaultFragment"
+        android:label="@string/nav_vault"
+        tools:layout="@layout/fragment_vault">
+        <action android:id="@+id/action_vault_to_result" app:destination="@id/resultFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.halashasneen.nova.ui.settings.SettingsFragment"
+        android:label="@string/nav_settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>

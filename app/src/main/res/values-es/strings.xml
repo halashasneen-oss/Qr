@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QR Pro</string>
+
+    <string name="nav_home">Inicio</string>
+    <string name="nav_scan">Escanear</string>
+    <string name="nav_create">Crear</string>
+    <string name="nav_history">Historial</string>
+    <string name="nav_vault">Bóveda</string>
+    <string name="nav_settings">Ajustes</string>
+
+    <string name="home_title">Bienvenido</string>
+    <string name="home_subtitle">Escanea, crea y gestiona tus códigos QR de forma segura</string>
+    <string name="btn_scan">Escanear código</string>
+    <string name="btn_create">Crear código</string>
+    <string name="btn_history">Historial</string>
+    <string name="btn_vault">Bóveda</string>
+    <string name="btn_settings">Ajustes</string>
+    <string name="btn_watch_ad">Ver anuncio para quitar anuncios 1h</string>
+    <string name="stats_scans">Escaneos</string>
+    <string name="stats_generated">Generados</string>
+    <string name="stats_vault">Elementos en bóveda</string>
+
+    <string name="scan_title">Apunta la cámara al código</string>
+    <string name="scan_permission_needed">Se necesita permiso de cámara para escanear códigos</string>
+    <string name="scan_grant_permission">Conceder permiso</string>
+    <string name="scan_flash_on">Encender flash</string>
+    <string name="scan_flash_off">Apagar flash</string>
+
+    <string name="result_type">Tipo</string>
+    <string name="result_content">Contenido</string>
+    <string name="result_site_name">Nombre del sitio</string>
+    <string name="result_secure">Conexión segura (HTTPS)</string>
+    <string name="result_insecure">Advertencia: conexión insegura (HTTP)</string>
+    <string name="action_open">Abrir</string>
+    <string name="action_copy">Copiar</string>
+    <string name="action_share">Compartir</string>
+    <string name="action_save">Guardar</string>
+    <string name="action_favorite">Añadir a favoritos</string>
+    <string name="action_call">Llamar</string>
+    <string name="action_send_email">Enviar correo</string>
+    <string name="action_open_maps">Abrir en Maps</string>
+    <string name="copied_toast">Copiado</string>
+
+    <string name="create_title">Crear código QR</string>
+    <string name="create_type_website">Sitio web</string>
+    <string name="create_type_text">Texto</string>
+    <string name="create_type_phone">Teléfono</string>
+    <string name="create_type_email">Correo</string>
+    <string name="create_type_sms">SMS</string>
+    <string name="create_type_wifi">Wi-Fi</string>
+    <string name="create_type_contact">Contacto</string>
+    <string name="create_type_location">Ubicación</string>
+    <string name="create_type_whatsapp">WhatsApp</string>
+    <string name="create_type_telegram">Telegram</string>
+    <string name="create_type_instagram">Instagram</string>
+    <string name="create_type_facebook">Facebook</string>
+    <string name="create_type_youtube">YouTube</string>
+    <string name="create_customize">Personalizar</string>
+    <string name="create_color">Color</string>
+    <string name="create_background">Fondo</string>
+    <string name="create_logo">Añadir logo</string>
+    <string name="create_dot_shape">Forma de puntos</string>
+    <string name="create_corner_shape">Forma de esquinas</string>
+    <string name="create_frame">Añadir marco</string>
+    <string name="create_generate">Generar código</string>
+    <string name="create_save_png">Guardar como PNG</string>
+
+    <string name="history_title">Historial</string>
+    <string name="history_empty">Aún no hay elementos en el historial</string>
+    <string name="history_search_hint">Buscar en el historial...</string>
+    <string name="history_filter_all">Todos</string>
+    <string name="history_filter_favorites">Favoritos</string>
+    <string name="history_export">Exportar historial</string>
+    <string name="history_delete_selected">Eliminar seleccionados</string>
+    <string name="history_clear_all">Borrar todo el historial</string>
+
+    <string name="vault_title">Bóveda</string>
+    <string name="vault_locked_message">La bóveda está bloqueada para tu protección</string>
+    <string name="vault_unlock_pin">Introduce la contraseña</string>
+    <string name="vault_unlock_fingerprint">Usar huella digital</string>
+    <string name="vault_empty">No hay elementos guardados en la bóveda</string>
+    <string name="vault_add_item">Añadir elemento</string>
+    <string name="vault_set_pin_title">Establecer contraseña de la bóveda</string>
+
+    <string name="stats_title">Estadísticas</string>
+    <string name="stats_most_used_type">Tipo más usado</string>
+    <string name="stats_weekly_usage">Uso semanal</string>
+
+    <string name="settings_title">Ajustes</string>
+    <string name="settings_language">Idioma</string>
+    <string name="settings_dark_mode">Modo oscuro</string>
+    <string name="settings_vibration">Vibración</string>
+    <string name="settings_scan_sound">Sonido de escaneo</string>
+    <string name="settings_auto_copy">Copia automática</string>
+    <string name="settings_save_history">Guardar historial</string>
+    <string name="settings_privacy_mode">Modo privado (ocultar historial)</string>
+    <string name="settings_backup">Copia de seguridad</string>
+    <string name="settings_restore">Restaurar desde archivo</string>
+    <string name="settings_about">Acerca de</string>
+
+    <string name="dialog_cancel">Cancelar</string>
+    <string name="dialog_confirm">Confirmar</string>
+    <string name="dialog_delete_confirm_title">Confirmar eliminación</string>
+    <string name="dialog_delete_confirm_message">¿Seguro que quieres eliminar esto? Esta acción no se puede deshacer.</string>
+</resources>

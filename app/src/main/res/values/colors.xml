@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- الألوان الأساسية للهوية البصرية -->
+    <color name="brand_primary">#6C5CE7</color>
+    <color name="brand_primary_variant">#4834D4</color>
+    <color name="brand_secondary">#00D2B4</color>
+    <color name="brand_accent">#FF6B9D</color>
+
+    <!-- الوضع النهاري -->
+    <color name="background_light">#F7F7FC</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="surface_glass_light">#CCFFFFFF</color>
+    <color name="text_primary_light">#1A1A2E</color>
+    <color name="text_secondary_light">#6E6E82</color>
+
+    <!-- الوضع الليلي -->
+    <color name="background_dark">#0F0F1A</color>
+    <color name="surface_dark">#1A1A2E</color>
+    <color name="surface_glass_dark">#992A2A40</color>
+    <color name="text_primary_dark">#F2F2F7</color>
+    <color name="text_secondary_dark">#A0A0B8</color>
+
+    <!-- ألوان دلالية -->
+    <color name="success_green">#2ECC71</color>
+    <color name="warning_orange">#F39C12</color>
+    <color name="danger_red">#E74C3C</color>
+    <color name="secure_https">#2ECC71</color>
+    <color name="insecure_http">#E74C3C</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+</resources>
